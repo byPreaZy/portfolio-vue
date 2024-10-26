@@ -1,6 +1,6 @@
 <template>
     <div id='404'>
-      <img src="@/assets/images/404.png" alt="404" @click="GoToHome">
+      <img src="@/assets/images/404.png" alt="404" @click='GoToHome'>
     </div>
   </template>
   
@@ -9,7 +9,7 @@
     name: 'HomeNotFound',
     methods: {
       GoToHome () {
-        this$router.push('/')
+        this.$router.push('/')
       }
     }
   }
