@@ -38,7 +38,8 @@ export default {
     return {
       creations: [
         { id: 1, title: 'Recto Menu Tacos&Burgers', image: require('@/assets/images/image1.jpg'), details: 'Réalisation des menus de l`enseigne Tacos&Burgers', url: 'https://www.facebook.com/tacos.burgers.3/?locale=fr_FR' },
-        { id: 2, title: 'Verso Menu Tacos&Burgers', image: require('@/assets/images/image2.jpg'), details: 'Réalisation des menus de l`enseigne Tacos&Burgers', url: '' }
+        { id: 2, title: 'Verso Menu Tacos&Burgers', image: require('@/assets/images/image2.jpg'), details: 'Réalisation des menus de l`enseigne Tacos&Burgers', url: '' },
+        { id: 3, title: 'Logo Refuge Enjoy Life', image: require('@/assets/images/Logo-Refuge.png'), details: 'Création du Logo pour le refuge enjoy life, etablissement dune charte graphique', url: 'https://www.facebook.com/RefugeEnjoyLife' }
       ],
       showModal: false,
       selectedCreation: null
@@ -65,7 +66,7 @@ export default {
   display: flex;
   justify-content: center;
  }
- 
+
 .creation {
   display: flex;
   flex-direction: column;
