@@ -20,5 +20,17 @@
   </script>
 
 <style scoped>
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa; /* Exemple de couleur de fond */
+}
 
+img {
+  padding: 0.5rem;
+  max-width: 5em;
+}
 </style>
