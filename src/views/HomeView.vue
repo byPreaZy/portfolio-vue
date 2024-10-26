@@ -21,14 +21,14 @@ export default {
   },
   data() {
     return {
-      activeSection: 'about' // Définissez la section active par défaut
+      activeSection: 'about'
     };
   },
   methods: {
     updateSection(section) {
       console.log('Section active:', section);
       this.activeSection = section;
-      this.$router.push(`/${section}`); // Utilisez des backticks pour la chaîne de caractères de template
+      this.$router.push(`/${section}`);
     }
   }
 }
