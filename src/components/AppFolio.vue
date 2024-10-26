@@ -61,7 +61,11 @@ export default {
   width: 100%;
   overflow-x: hidden; /* Empêche le défilement horizontal */
 }
-
+ h2 {
+  display: flex;
+  justify-content: center;
+ }
+ 
 .creation {
   display: flex;
   flex-direction: column;
