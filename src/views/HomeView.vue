@@ -33,3 +33,18 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  flex-grow: 1;
+  max-width: 90%;
+  margin: 0 auto;
+}
+</style>

@@ -15,6 +15,7 @@
 export default {
     methods: {
         goToHome() {
+            this.$emit('show-section', 'about');
             this.$router.push('/');
         },
         showSection(section) {
@@ -32,31 +33,30 @@ header {
     min-width: 100%;
     max-height: 20%;
 }
-  
+
 header img {
     max-width: 15em;
     max-height: 15em;
     cursor: pointer;
 }
-  
+
 nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-  
+
 nav ul li {
     margin-left: 1rem;
 }
-  
+
 nav ul li a {
     text-decoration: none;
     color: #007bff;
 }
-  
+
 nav ul li a:hover {
     text-decoration: underline;
 }
 </style>
-  
