@@ -1,18 +1,35 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class='home'>
+    <AppHeader @show-section='updateSection' />
+    <main>
+      <router-view :activeSection="activeSection"></router-view>
+    </main>
+    <AppFooter />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import AppFooter from '@/components/AppFooter.vue';
+import AppHeader from '@/components/AppHeader.vue';
+
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    AppHeader,
+    AppFooter
+  },
+  data() {
+    return {
+      activeSection: 'about'
+    };
+  },
+  methods: {
+    updateSection(section) {
+      console.log('Section active:', section);
+      this.activeSection = section;
+      this.$router.push(`/${section}`);
+    }
   }
 }
 </script>
