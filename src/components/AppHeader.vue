@@ -3,9 +3,9 @@
     <img src="../assets/images/Logo.png" alt="Logo" @click='goToHome'>
     <nav>
         <ul>
-            <li><router-link to='/about' @click="showSection('about')">Présentation</router-link></li>
-            <li><router-link to='/folio' @click="showSection('folio')">Créations</router-link></li>
-            <li><router-link to='/contact' @click="showSection('contact')">Contact</router-link></li>
+            <li class="button"><router-link to='/about' @click="showSection('about')" exact-active-class="active">Présentation</router-link></li>
+            <li class="button"><router-link to='/folio' @click="showSection('folio')" exact-active-class="active">Créations</router-link></li>
+            <li class="button"><router-link to='/contact' @click="showSection('contact')" exact-active-class="active">Contact</router-link></li>
         </ul>
     </nav>
 </header>
@@ -51,12 +51,39 @@ nav ul li {
     margin-left: 1rem;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #007bff;
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(16, 145, 196);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.button:active {
+    background-color: #004494;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a.active {
     text-decoration: underline;
 }
+
 </style>

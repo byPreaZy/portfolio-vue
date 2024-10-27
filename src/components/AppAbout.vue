@@ -24,34 +24,48 @@ export default {
 <style scoped>
 
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
 }
 
 h1 {
-  font-family: "Zen Antique", serif;
-  font-weight: 400;
-  font-size: xx-large;
-  font-style: normal;
+    color: rgb(16, 145, 196);
+    font-family: "Zen Antique", serif;
+    font-weight: 400;
+    font-size: 2.5em;
+    font-style: normal;
+    margin-bottom: 1em;
 }
 
 p {
-  text-align: center;
-  font-style: oblique;
-  font-size: 1.2rem;
-  font-family: "Zen Antique", serif;
+    color: rgb(16, 145, 196);
+    text-align: center;
+    font-style: oblique;
+    font-size: 1.2em;
+    font-family: "Zen Antique", serif;
+    margin-bottom: 1.5em;
 }
 
 a {
-  border: 3 1 rgb(0, 4, 243);
-  font-family: "Zen Antique", serif;
+    color: rgb(16, 145, 196);
+    text-decoration: none;
+    border-bottom: 2px solid rgb(16, 145, 196);
+    font-family: "Zen Antique", serif;
+    transition: border-color 0.3s ease;
 }
 
-img{
-  max-width: 10rem;
-  max-height: 10rem;
+a:hover {
+    border-color: rgb(11, 104, 146);
+}
 
+img {
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 50%; /* Pour rendre l'image circulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
 }
 </style>
