@@ -14,7 +14,7 @@
     name: 'AppFooter',
     data() {
       return {
-        lastUpdated: '26-10-2024'
+        lastUpdated: '27-10-2024'
       }
     }
   }
