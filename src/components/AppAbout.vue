@@ -32,6 +32,7 @@ section {
     text-align: center;
 }
 
+
 h1 {
     color: rgb(16, 145, 196);
     font-family: "Zen Antique", serif;
