@@ -68,8 +68,79 @@ export default {
         }
     }
 }
+
 </script>
 
 <style scoped>
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
 
+h1 {
+    color: rgb(16, 145, 196);
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    border: 0.16em solid rgb(16, 145, 196);
+    border-radius: 1em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    color: rgb(16, 145, 196);
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 0.1em solid rgb(16, 145, 196);
+    border-radius: 0.5em;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: rgb(16, 145, 196);
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 1em;
+    background-color: rgb(16, 145, 196);
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(11, 104, 146);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
 </style>
