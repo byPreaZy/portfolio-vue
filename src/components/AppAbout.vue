@@ -65,7 +65,7 @@ a:hover {
 img {
     max-width: 10rem;
     max-height: 10rem;
-    border-radius: 50%; /* Pour rendre l'image circulaire */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 </style>

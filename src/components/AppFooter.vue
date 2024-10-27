@@ -27,7 +27,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    color: rgb(0, 0, 0); /* Couleur du texte */
+    color: rgb(0, 0, 0);
     font-family: "Zen Antique", serif;
     text-align: center;
 }

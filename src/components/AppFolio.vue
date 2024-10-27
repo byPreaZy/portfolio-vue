@@ -62,7 +62,7 @@ export default {
 <style scoped>
 #folio {
     width: 100%;
-    overflow-x: hidden; /* Empêche le défilement horizontal */
+    overflow-x: hidden;
     padding: 2em;
     text-align: center;
 }
@@ -87,6 +87,7 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transform: scale(0.9);
 }
 
 .creation img {
@@ -97,7 +98,7 @@ h2 {
 
 .creation:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(0.9);
 }
 
 .creation h3 {
