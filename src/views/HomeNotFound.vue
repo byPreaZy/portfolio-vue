@@ -1,5 +1,6 @@
 <template>
   <div id='404'>
+    <h1>404</h1>
     <img src="@/assets/images/404.png" alt="404" @click='GoToHome'>
   </div>
 </template>
@@ -25,6 +26,7 @@ html, body {
   
 div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -32,6 +34,13 @@ div {
     text-align: center;
     padding: 2rem;
     box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(16, 145, 196);
+    font-family: "Zen Antique", serif;
+    font-size: 2em;
+    margin-top: 1rem;
 }
   
 img {

@@ -3,6 +3,8 @@
     <div class="modal" @click.stop>
       <h2>{{ creation.title }}</h2>
       <p>{{ creation.details }}</p>
+      <p>{{ creation.usetech }}</p>
+      <p>{{ creation.date }}</p>
       <a v-if="creation.url" :href="creation.url" target="_blank" class="learn-more">Pour en savoir plus cliquez ici</a><br>
       <button @click="closeModal">Fermer</button>
     </div>
